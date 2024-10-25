@@ -44,18 +44,24 @@ header {
     text-align: center;
 }
 
+nav {
+    width: 100%; /* Asegúrate de que el nav ocupe el 100% del ancho */
+    display: flex; /* Utiliza flexbox para alinear el contenido */
+    justify-content: center; /* Centra el contenido del nav */
+}
+
 nav ul {
     list-style: none;
     display: flex; /* Flexbox para una mejor alineación */
     justify-content: center; /* Centra los elementos del ul */
     gap: 20px; /* Espaciado entre enlaces */
     padding: 0;
-    margin: 0;
-    flex-wrap: wrap; /* Permite que los elementos se ajusten en la línea siguiente si es necesario */
+    margin: 0; /* Asegúrate de que no haya margen */
+    width: 100%; /* Asegúrate de que el ul ocupe el 100% del ancho */
 }
 
 nav ul li {
-    display: inline;
+    text-align: center; /* Asegúrate de que el texto esté centrado en cada elemento */
 }
 
 nav ul li a {
