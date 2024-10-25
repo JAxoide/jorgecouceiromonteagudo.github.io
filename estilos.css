@@ -1,5 +1,4 @@
 /* Estilos base */
-/* Estilos base */
 body {
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0;
@@ -117,7 +116,7 @@ nav ul li a:hover {
 /* Pie de página */
 footer {
     background-color: #f9f9f9;
-    color: #fff;
+    color: #333; /* Cambiar el color del texto para que sea visible */
     text-align: center;
     padding: 15px 0; /* Espaciado más amplio */
     position: relative; /* Cambiado a relative para mantener el footer al final */
@@ -144,4 +143,33 @@ ul li a {
 
 ul li a:hover {
     text-decoration: underline;
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 30px; /* Tamaño más pequeño para h1 en móviles */
+    }
+
+    h2 {
+        font-size: 30px; /* Tamaño más pequeño para h2 en móviles */
+    }
+
+    nav ul {
+        flex-direction: column; /* Cambiar a disposición vertical */
+        align-items: center; /* Centrar los elementos */
+        gap: 10px; /* Espaciado entre enlaces en móviles */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Espaciado entre elementos */
+    }
+
+    .section-content {
+        padding: 20px 10px; /* Menos padding en móviles */
+    }
+
+    .profile-pic {
+        max-width: 90%; /* Asegurar que la imagen no exceda el ancho */
+    }
 }
