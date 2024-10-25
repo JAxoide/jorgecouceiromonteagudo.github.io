@@ -4,106 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300&display=swap" rel="stylesheet">
     <title>Jorge Couceiro Monteagudo - Home</title>
-    <link rel="stylesheet" href="estilos.css">
-    <style>
-        /* Estilos base */
-        body {
-            font-family: 'Source Sans Pro', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-            line-height: 1.3;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        h1, h2 {
-            font-weight: 600; /* Resalta los encabezados con un peso mayor */
-        }
-
-        h1 {
-            font-weight: 300; /* Peso ligero (fino) */
-            text-align: center;
-            color: #555;
-            font-size: 50px;
-        }
-
-        h2 {
-            text-align: center;
-            color: #333;
-            font-size: 45px;
-        }
-
-        p {
-            max-width: 700px;
-            margin: 0 auto;
-            padding: 10px;
-            text-align: center;
-            color: #555;
-        }
-
-        /* Navegación */
-        header {
-            background-color: #f9f9f9;
-            padding: 15px;
-            text-align: center; /* Asegura que el contenido esté centrado */
-        }
-
-        nav ul {
-            list-style: none;
-            display: inline-flex; /* Cambia a inline-flex para que el ul se comporte como inline */
-            justify-content: center; /* Centra los elementos del ul */
-            gap: 20px; /* Espaciado entre enlaces */
-            padding: 0;
-            margin: 0;
-        }
-
-        nav ul li {
-            display: inline;
-        }
-
-        nav ul li a {
-            color: #555;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 10px 15px;
-            transition: background-color 0.3s, transform 0.3s; /* Añadido efecto de transformación */
-        }
-
-        nav ul li a:hover {
-            background-color: #555;
-            transform: scale(1.05); /* Efecto de escala al pasar el mouse */
-        }
-
-        /* Ajustes para la imagen de perfil */
-        .profile-pic {
-            width: auto; /* Mantiene el ancho original de la imagen */
-            max-width: 100%; /* Asegura que no sobrepase el ancho del contenedor */
-            height: auto; /* Mantiene la proporción de la imagen */
-            border-radius: 10px; /* Bordes redondeados */
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
-        }
-
-        /* Centrar solo la imagen */
-        .centered-content {
-            text-align: center; /* Centra el contenido de texto (incluida la imagen) */
-            margin: 20px 0; /* Espacio superior e inferior */
-        }
-
-        /* Pie de página */
-        footer {
-            background-color: #f9f9f9;
-            color: #fff;
-            text-align: center;
-            padding: 15px 0; /* Espaciado más amplio */
-            position: relative; /* Cambiado a relative para mantener el footer al final */
-            width: 100%;
-            margin-top: auto; /* Permite que el footer se empuje hacia abajo */
-        }
-    </style>
+    <link rel="stylesheet" href="styles/estilos.css">
 </head>
 <body>
 
@@ -113,19 +16,20 @@
         <nav>
             <ul>
                 <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="articles.html">ARTICLES</a></li>
-                <li><a href="talks.html">INTERVIEWS & TALKS</a></li>
+                <li><a href="content/about.html">ABOUT</a></li>
+                <li><a href="content/articles.html">ARTICLES</a></li>
+                <li><a href="content/talks.html">INTERVIEWS & TALKS</a></li>
             </ul>
         </nav>
         <hr width="75%">
+        
     </header>
 
     <!-- Sección de Inicio -->
     <section>
         <h2>Home</h2>
         <div class="centered-content">
-            <img src="jorge.jpg" alt="Jorge Couceiro Monteagudo" class="profile-pic"> <!-- Mejorar el alt -->
+            <img src="images/jorge.jpg" alt="Descripción de la imagen" class="profile-pic">
             <p>I am a philosopher working on the ethics of digital technologies and on the ethics of defense technologies at the Philosophy Faculty, University of Complutense and at the Department of Philosophy and Society.</p>
         </div>
     </section>
