@@ -99,8 +99,8 @@ nav ul li a:hover {
 
 /* Ajustes para la imagen de perfil */
 .profile-pic {
-    width: auto; /* Mantiene el ancho original de la imagen */
-    max-width: 600px; /* Asegura que no sobrepase el ancho del contenedor */
+    width: 100%; /* Ancho al 100% de su contenedor */
+    max-width: 600px; /* Ancho máximo que no sobrepase este valor */
     height: auto; /* Mantiene la proporción de la imagen */
     border-radius: 10px; /* Bordes redondeados */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
