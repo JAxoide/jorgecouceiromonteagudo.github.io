@@ -42,16 +42,17 @@ p {
 header {
     background-color: #f9f9f9;
     padding: 15px;
-    text-align: center; /* Asegura que el contenido esté centrado */
+    text-align: center;
 }
 
 nav ul {
     list-style: none;
-    display: inline-flex; /* Cambia a inline-flex para que el ul se comporte como inline */
+    display: flex; /* Flexbox para una mejor alineación */
     justify-content: center; /* Centra los elementos del ul */
     gap: 20px; /* Espaciado entre enlaces */
     padding: 0;
     margin: 0;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en la línea siguiente si es necesario */
 }
 
 nav ul li {
@@ -63,12 +64,12 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     padding: 10px 15px;
-    transition: background-color 0.3s, transform 0.3s; /* Añadido efecto de transformación */
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 nav ul li a:hover {
     background-color: #555;
-    transform: scale(1.05); /* Efecto de escala al pasar el mouse */
+    transform: scale(1.05);
 }
 
 /* Secciones */
