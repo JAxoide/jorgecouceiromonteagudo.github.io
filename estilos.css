@@ -1,21 +1,23 @@
 /* Estilos base */
+/* Estilos base */
 body {
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
     color: #333;
-    line-height: 1.6; /* Aumenta el espacio entre líneas para mayor legibilidad */
+    line-height: 1.3;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
 h1, h2 {
-    font-weight: 600;
+    font-weight: 600; /* Resalta los encabezados con un peso mayor */
 }
 
 h1 {
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300; /* Peso ligero (fino) */
     text-align: center;
     color: #555;
@@ -40,14 +42,14 @@ p {
 header {
     background-color: #f9f9f9;
     padding: 15px;
-    text-align: center;
+    text-align: center; /* Asegura que el contenido esté centrado */
 }
 
 nav ul {
     list-style: none;
-    display: inline-flex;
-    justify-content: center;
-    gap: 20px;
+    display: inline-flex; /* Cambia a inline-flex para que el ul se comporte como inline */
+    justify-content: center; /* Centra los elementos del ul */
+    gap: 20px; /* Espaciado entre enlaces */
     padding: 0;
     margin: 0;
 }
@@ -61,12 +63,12 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     padding: 10px 15px;
-    transition: background-color 0.3s, transform 0.3s;
+    transition: background-color 0.3s, transform 0.3s; /* Añadido efecto de transformación */
 }
 
 nav ul li a:hover {
     background-color: #555;
-    transform: scale(1.05);
+    transform: scale(1.05); /* Efecto de escala al pasar el mouse */
 }
 
 /* Secciones */
@@ -74,27 +76,26 @@ nav ul li a:hover {
     padding: 50px 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* Centra el contenido horizontalmente */
 }
 
 .video-gallery {
-    display: flex;
-    flex-wrap: wrap; /* Permite que los videos se ajusten a múltiples líneas */
-    justify-content: center;
-    padding: 20px 0;
-    gap: 20px;
+    display: flex; /* Usar flexbox para alineación horizontal */
+    overflow-x: auto; /* Permite desplazamiento horizontal si hay muchos videos */
+    padding: 20px 0; /* Espaciado superior e inferior */
+    gap: 20px; /* Espaciado entre videos */
 }
 
 .video-item {
-    max-width: 300px;
+    max-width: 300px; /* Ancho máximo de cada video */
     text-align: center;
 }
 
 .video-item iframe {
-    width: 100%;
-    height: 200px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Asegura que el iframe ocupe el 100% del ancho del contenedor */
+    height: 200px; /* Altura fija para los videos */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
 }
 
 /* Ajustes para la imagen de perfil */
@@ -106,20 +107,21 @@ nav ul li a:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
 }
 
+/* Centrar solo la imagen */
 .centered-content {
-    text-align: center;
-    margin: 20px 0;
+    text-align: center; /* Centra el contenido de texto (incluida la imagen) */
+    margin: 20px 0; /* Espacio superior e inferior */
 }
 
 /* Pie de página */
 footer {
     background-color: #f9f9f9;
-    color: #555; /* Cambia el color del texto a más oscuro para mejor contraste */
+    color: #fff;
     text-align: center;
-    padding: 15px 0;
-    position: relative;
+    padding: 15px 0; /* Espaciado más amplio */
+    position: relative; /* Cambiado a relative para mantener el footer al final */
     width: 100%;
-    margin-top: auto;
+    margin-top: auto; /* Permite que el footer se empuje hacia abajo */
 }
 
 /* Publicaciones */
@@ -141,39 +143,4 @@ ul li a {
 
 ul li a:hover {
     text-decoration: underline;
-}
-
-/* Media Queries para Responsividad */
-@media (max-width: 600px) {
-    h1 {
-        font-size: 28px; /* Tamaño más pequeño en pantallas pequeñas */
-    }
-
-    h2 {
-        font-size: 36px;
-    }
-
-    .video-item {
-        max-width: 90%; /* Aumenta el ancho en pantallas pequeñas */
-    }
-}
-
-@media (min-width: 601px) and (max-width: 900px) {
-    h1 {
-        font-size: 32px;
-    }
-
-    h2 {
-        font-size: 40px;
-    }
-}
-
-@media (min-width: 901px) {
-    h1 {
-        font-size: 50px;
-    }
-
-    h2 {
-        font-size: 45px;
-    }
 }
